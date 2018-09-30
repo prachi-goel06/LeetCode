@@ -11,11 +11,8 @@ class Solution:
 
 if __name__ == '__main__':
     sol=Solution()
-    try:
-        assert(sol.judgeCircle('UD'))
-        assert (sol.judgeCircle(""))
-        assert (sol.judgeCircle('UDLRUDLRRL'))
-        assert (sol.judgeCircle('LLDD'))
+    assert(sol.judgeCircle('UD')==True)
+    assert (sol.judgeCircle("")==True)
+    assert (sol.judgeCircle('UDLRUDLRRL')==True)
+    assert (sol.judgeCircle('LLDD')==False)
 
-    except (AssertionError):
-        print ('Robot did not come to the Origin in the last test case')
